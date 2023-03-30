@@ -1,12 +1,9 @@
 {
-  "name": "library_app",
+  "name": "Library App",
   "summary": "Test Module",
-  "description": "Test Module with 5% chance to work",
   "author": "Michael Daoud",
-  "website": "https://sydneytools.com.au/",
-  "category": 'Uncategorised',
-  "version": "0.1",
+  "website": "https://sydneytools.com.au",
+  "version": "16.0.1",
   "depends": ["base"],
-  "data": ["security/ir.model.access.csv","views/views.xml","views/templates.xml"],
-  "demo": ["demo/demo.xml"],
+  "application": True,
 }

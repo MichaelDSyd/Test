@@ -1,6 +1,6 @@
 {
-  "name": "Library Management",
-  "summary": "Manage Library Catalog and Book Lending",
+  "name": "TEST Library Management",
+  "summary": "TEST Manage Library Catalog and Book Lending",
   "author": "Michael Daoud",
   "website": "https://sydneytools.com.au",
   "version": "16.0.1",

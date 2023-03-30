@@ -5,5 +5,6 @@
   "website": "https://sydneytools.com.au",
   "version": "16.0.1",
   "depends": ["base"],
+  "category": "Services/Library",
   "application": True,
 }

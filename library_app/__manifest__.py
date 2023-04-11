@@ -9,6 +9,7 @@
   ],
   "category": "Services/Library",
   "data": [
+    "security/library_services.xml",
     "views/library_menu.xml",
   ],
   "application": True,

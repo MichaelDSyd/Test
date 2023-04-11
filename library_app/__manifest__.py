@@ -6,5 +6,6 @@
   "version": "16.0.1",
   "depends": ["base"],
   "category": "Services/Library",
+  "data": ["views/library_menu.xml",],
   "application": True,
 }

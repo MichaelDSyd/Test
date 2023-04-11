@@ -6,6 +6,6 @@
   "version": "16.0.1",
   "depends": ["base"],
   "category": "Services/Library",
-  "data": ["security/library_security.xml","views/library_menu.xml",],
+  "data": ["views/library_menu.xml",],
   "application": True,
 }

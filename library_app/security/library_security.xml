@@ -1,5 +1,4 @@
 <odoo>
-  <data>
         <!-- Library Manager Group -->
     <record id="library_group_manager" model="res.groups">
       <field name="name">Manager</field>
@@ -19,5 +18,4 @@
       <field name="implied_ids"
              eval="[(4, ref('base.group_user'))]"/>
     </record>
-  </data>
 </odoo>

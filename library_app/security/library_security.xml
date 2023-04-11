@@ -2,7 +2,7 @@
   <data>
         <!-- Library Manager Group -->
     <record id="library_group_manager" model="res.groups">
-      <field name="name">Manager</field>
+      <field name="Manager"/>
       <field name="category_id"
              ref="base.module_category_services_library"/>
       <field name="implied_ids"
@@ -13,7 +13,7 @@
     </record>
     <!-- Library User Group -->
     <record id="library_group_user" model="res.groups">
-      <field name="name">User</field>
+      <field name="User"/>
       <field name="category_id"
              ref="base.module_category_services_library"/>
       <field name="implied_ids"

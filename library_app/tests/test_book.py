@@ -10,4 +10,7 @@ class TestBook(TransactionCase):
         "New Books are active by default"
         self.assertEqual(
             self.book1.active, True
+    def test_check_isbn(self):
+        "Check valid ISBN"
+        self.assertTrue(self.book1._check_isbn) 
         )

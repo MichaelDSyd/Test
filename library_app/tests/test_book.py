@@ -12,7 +12,7 @@ class TestBook(TransactionCase):
     def test_check_isbn(self):
         "Check valid ISBN"
         self.assertTrue(self.book1._check_isbn)
-def setUp(self, *args, **kwargs):
+    def setUp(self, *args, **kwargs):
     super().setUp(*args, **kwargs)
     user_admin = self.env.ref("base.user_admin")
     self.env = self.env(user=user_admin)

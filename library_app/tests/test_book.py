@@ -8,4 +8,4 @@ class TestBook(TransactionCase):
             "isbn": "879-1-78439-279-6"})
     def test_book_create(self):
         "New Books are active by default"
-        self.assertEqual(self.book.active, True)
+        self.assertEqual(self.book1.active, True)

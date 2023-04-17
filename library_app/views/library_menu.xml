@@ -5,7 +5,6 @@
   <record id="action_library_book" model=
     "ir.actions.act_window">
     <field name="name">Library Books</field>
-Step 6 – Implementing the backend view layer 103
     <field name="res_model">library.book</field>
     <field name="view_mode">tree,form</field>
   </record>

@@ -5,8 +5,7 @@
     <field name="arch" type="xml">
       <form>
         <header>
-          <button name="check_isbn" type="object"
-            string="Check ISBN" />
+          <!-- Buttons will go here -->
         </header>
         <sheet>
           <group name="group_top">

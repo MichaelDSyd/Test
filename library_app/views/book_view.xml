@@ -5,7 +5,7 @@
     <field name="arch" type="xml">
       <form>
         <header>
-          <<!-- Buttons will go here -->>
+          <!-- Buttons will go here -->
         </header>
         <sheet>
           <!-- Content goes here: -->

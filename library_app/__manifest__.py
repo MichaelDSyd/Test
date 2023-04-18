@@ -11,6 +11,7 @@
   "data": [
     "security/library_security.xml",
     "security/ir.model.access.csv",
+    "views/book_view.xml",
     "views/library_menu.xml",
   ],
   "application": True,

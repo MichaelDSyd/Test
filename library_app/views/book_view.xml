@@ -22,7 +22,7 @@
               <field name="image" widget="image" />
             </group>
           </group>
-       </sheet>
+        </sheet>
       </form>
     </field>
   </record>

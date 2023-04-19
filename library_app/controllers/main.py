@@ -1,7 +1,5 @@
 from odoo import http
-
 class Books(http.Controller):
-
     @http.route("/library/books")
     def list(self, **kwargs):
         Book = http.request.env["library.book"]

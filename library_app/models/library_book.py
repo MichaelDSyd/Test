@@ -24,7 +24,7 @@ class Book(models.Model):
               ponderations)]
             remain = sum(terms) % 10
             check = 10 - remain if remain != 0 else 0
-            return digits [-1] == check
+            return digits[-1] == check
 
 #Validation Error Code
 

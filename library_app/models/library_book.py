@@ -15,7 +15,7 @@ class Book(models.Model):
 
 #Business Logic to Check ISBN
 
-    def _check_isbn(self):
+    def check_isbn(self):
         self.ensure_one()
         digits = [int(x) for x in self.isbn if x.isdigit()]
         if len(digits) == 13:

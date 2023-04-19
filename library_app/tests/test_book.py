@@ -9,7 +9,7 @@ class TestBook(TransactionCase):
     def test_book_create(self):
         "New Books are active by default"
         self.assertEqual(self.book1.active, True)
-    def test_check_isbn(self):
+    def test__check_isbn(self):
         "Check valid ISBN"
         self.assertTrue(self.book1._check_isbn)
     def setUp(self, *args, **kwargs):

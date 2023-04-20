@@ -10,6 +10,10 @@
       <field name="isbn" position="after">
         <field name="is_available" />
       </field>
+    <!-- TEST BELOW 3 LINES -->
+      <field name="is_available" position="after">
+        <field name="test_field" />
+      </field>
       
     </field>
   </record>

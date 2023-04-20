@@ -4,9 +4,7 @@
   "author": "Michael Daoud",
   "website": "https://sydneytools.com.au",
   "version": "16.0.1",
-  "depends": [
-    "base"
-  ],
+  "depends": ["base"],
   "category": "Services/Library",
   "data": [
     "security/library_security.xml",
@@ -14,6 +12,6 @@
     "views/book_view.xml",
     "views/library_menu.xml",
     "views/book_list_template.xml",
-  ],
+    ],
   "application": True,
 }

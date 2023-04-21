@@ -1,6 +1,6 @@
 <odoo>
   <!-- Library App Menu -->
-  <menuitem id="menu_library" name="ST Library" />
+  <menuitem id="menu_library" name="ST Library" web_icon="library_app,static/description/icon.png"/>
   <!-- Action to open the Book list -->
   <record id="action_library_book" model=
     "ir.actions.act_window">

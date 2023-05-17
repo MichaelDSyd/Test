@@ -3,7 +3,7 @@
     "license": "AGPL-3",
     "description": "Manage members borrowing books.",
     "author": "Daniel Reis",
-    "depends": ["library_app"],
+    "depends": ["library_app", "mail"],
     "application": False,
     "data": [
         "security/ir.model.access.csv",

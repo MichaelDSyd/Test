@@ -4,7 +4,7 @@ class TestBook(TransactionCase):
         super().setUp(*args, **kwargs)
         user_admin = self.env.ref("base.user_admin")
         self.env = self.env(user=user_admin)
-        self.Book = self.env["library_book"]
+        self.Book = self.env["library.book"]
         self.book1 = self.Book.create({
             "name": "Odoo Development Essentials",
             "isbn": "879-1-78439-279-6"})

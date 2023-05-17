@@ -7,5 +7,4 @@
       name="Members"
       action="action_library_member"
       parent="library_app.menu_library" />
-
 </odoo5

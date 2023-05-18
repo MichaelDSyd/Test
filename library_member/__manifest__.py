@@ -7,6 +7,7 @@
     "application": False,
     "data": [
         "security/ir.model.access.csv",
+        "security/library_security.xml",
         "views/book_view.xml",
         "views/member_view.xml",
         "views/library_menu.xml",

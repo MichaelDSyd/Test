@@ -4,6 +4,10 @@ class Book(models.Model):
     _name = "library.book"
     _description = "Book"
     _order = "name, date_published desc"
+    _recname = "name"
+    _table = "library_book"
+    _log_access = True
+    _auto = True
     name = fields.Char("Title", required=True)
     isbn = fields.Char("ISBN")
     active = fields.Boolean("Active?", default=True)

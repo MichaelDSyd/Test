@@ -1,3 +1,5 @@
+from odoo import fields, models
+from odoo.exceptions import ValidationError
 class Book (models.Model):
     _name = "library.book"
     _description = "Book"

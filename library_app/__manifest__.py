@@ -18,5 +18,5 @@
     "data/library.book.csv",
     "data/book_demo.xml",
     ],
-  "application": Tre,
+  "application": True,
 }

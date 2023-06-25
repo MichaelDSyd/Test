@@ -54,4 +54,4 @@ class Book(models.Model):
                 raise ValidationError("please provide an ISBN for %s" % book.name)
             if book.isbn and not book._checkisbn():
                 raise ValidationError("%s ISBN is invalid" % book.isbn)
-        return True 
+        return True

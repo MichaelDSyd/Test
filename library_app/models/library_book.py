@@ -33,6 +33,19 @@ class Book(models.Model):
     author_ids = fields.Many2many(
       "res.partner", string="Authors")
 
+      #Added publisher_country_id 
+      
+    publisher_country_id = fields.Many2one(
+        "res.country", string="Publisher Country",
+        compute="_compute_publisher_country",
+    )
+
+    @api.depends("publisher_id.country_id")
+    def _compute_publisher_country(self):
+        for book in self:
+            book.publisher_country_id =
+              book.publisher_id.country_id
+
 #Business Logic to Check ISBN
 
     def check_isbn(self):

@@ -42,14 +42,6 @@ class Book(models.Model):
          "CHECK (date_published <= current_date)",
          "Publication date must not be in the future."),
     ]
-
-#API CONSTRAINTS
-    @api.constrains("isbn")
-    def _constrain_isbn_valid(self):
-        for book in self:
-            if book.isbn and not book._check_isbn():
-                raise ValidationError(
-                    "%s is an invalid ISBN" % book.isbn)
 #Business Logic to Check ISBN
 
     def check_isbn(self):

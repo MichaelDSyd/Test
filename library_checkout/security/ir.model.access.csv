@@ -1,2 +1,3 @@
 id, name, model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 checkout_user,Checkout User,model_library_checkout,library_app.library_group_user,1,1,1,1
+checkout_line_user,Checkout Line User,model_library_checkout,library_app.library_group_user,1,1,1,1

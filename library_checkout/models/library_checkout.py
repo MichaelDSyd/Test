@@ -16,3 +16,8 @@ class Checkout(models.Model):
     request_date = fields.Date(
         default=lambda s: fields.Date.today(),
     )
+    line_ids = fields.One2many(
+        "library.checkout.line",
+        "checkout_id",
+        string="Borrowed Books",
+    )

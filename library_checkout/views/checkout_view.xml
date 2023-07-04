@@ -17,6 +17,16 @@
     <field name="arch" type="xml">
 
       <form>
+          <notebook>
+            <page name="lines">
+              <field name="line_ids">
+                <tree editable="bottom">
+                  <field name="book_id" />
+                  <field name="note" />
+                </tree>
+              </field>
+            </page>
+          </notebook>
         <sheet>
           <group>
             <field name="member_id" />

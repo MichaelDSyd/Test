@@ -1,6 +1,5 @@
 { "name": "Library Book Checkout",
-  "description": "Members can borrow books from the
-    library.",
+  "description": "Members can borrow books from the library.",
   "author": "Daniel Reis",
   "depends": ["library_member"],
   "data": [

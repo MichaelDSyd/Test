@@ -19,5 +19,6 @@
   <menuitem id="menu_library_stage"
             name="Stages"
             action="action_library_stage"
-            parent="library_app.menu_library_configuration"  />
+            parent="library_app.menu_library_configuration"  
+  />
 </odoo>

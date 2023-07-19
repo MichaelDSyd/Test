@@ -27,6 +27,7 @@ class Checkout(models.Model):
         Stage = self.env ["library.checkout.stage"]
         return Stage.search([("state","=","new")],
           limit=1)
+
     @api.model
     def _group_expand_stage_id(self, stages, domain,
       order):
@@ -36,6 +37,7 @@ class Checkout(models.Model):
         default=_default_stage_id,
         group_expand="_group_expand_stage_id")
     state = fields.Selection(related="stage_id.state")
+
     @api.model
     def create(self, vals):
         # Code before create: should use the 'vals' dict
@@ -48,3 +50,23 @@ class Checkout(models.Model):
             )
         return new_record
         
+    checkout_date = fields.Date(readonly=True)
+    close_date = fields.Date(readonly=True)
+
+      def write(self, vals):
+        # Code before write: 'self' has the old values
+        if "stage_id" in vals:
+            Stage = self.env["library.checkout.stage"]
+            old_state = self.stage_id.state
+            new_state =
+              Stage.browse(vals["stage_id"]).state
+            if new_state != old_state and new_state ==
+              "open":
+                vals['checkout_date'] = fields.Date.today()
+            if new_state != old_state and new_state ==
+               "done":
+                vals['close_date'] = fields.Date.today()
+        super().write(vals)
+        # Code after write: can use 'self' with the updated
+        # values
+        return True 

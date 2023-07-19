@@ -36,4 +36,15 @@ class Checkout(models.Model):
         default=_default_stage_id,
         group_expand="_group_expand_stage_id")
     state = fields.Selection(related="stage_id.state")
+    @api.model
+    def create(self, vals):
+        # Code before create: should use the 'vals' dict
+        new_record = super().create(vals)
+        # Code after create: can use the 'new_record'
+        # created
+        if new_record.stage_id.state in ("open", "close"):
+            raise exceptions.UserError(
+                "State not allowed for new checkouts."
+            )
+        return new_record
         
